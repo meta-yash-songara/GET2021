@@ -1,0 +1,258 @@
+<html>
+
+	<head>
+		<title>Metacube Parking System</title>
+	</head>
+	
+	<!-- Load an icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<body>
+	
+	<!-- Nav Bar -->
+	<nav>
+	  <a href="#Employee"><i class="fa fa-user-plus"></i> Add Employee</a> 
+	  <a href="#Vehicle"><i class="fa fa-car "></i> Add Vehicle</a> 
+	  <a href="#Feedback"><i class="fa fa-commenting"></i> Feedback</a> 
+	  <a href="#Pricing"><i class="fa fa-money"></i> Pricing</a>
+	</nav>
+	
+	<!-- parking Image -->
+	<div align="center">
+		<img src="parking.png" height="100%"/>
+	</div>
+	
+	<!-- Employee Registration Form -->
+	<div align="center" id="Employee">
+		<h1>Employee Registration Form</h1>
+		<form>
+			<table>
+				<tr>
+					<td>
+						<label>Full Name : </label>
+					</td>
+					<td>
+						<input type="text" placeholder="Enter your name : "/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label>Gender : </label>
+					</td>
+					<td>
+						<label>
+							<input type="radio" value="Male" name="gender"/> Male
+						</label>
+						<label>
+							<input type="radio" value="Female" name="gender"/> Female
+						</label>
+						<label>
+							<input type="radio" value="Other" name="gender"/> Other
+						</label>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label>Email : </label>
+					</td>
+					<td>
+						<input type="email" placeholder="Enter your email">
+					</tr>
+				</tr>
+				
+				<tr>
+					<td>
+						<label>Password : </label>
+					</td>
+					<td>
+						<input type="password" placeholder="Enter your password">
+					</tr>
+				</tr>
+				
+				<tr>
+					<td>
+						<label>Confirm Password : </label>
+					</td>
+					<td>
+						<input type="password" placeholder="Re-Enter your password">
+					</tr>
+				</tr>
+				
+				<tr>
+					<td>
+						<label>Contact Number : </label>
+					</td>
+					<td>
+						<input type="text" placeholder="Enter your phone number">
+					</tr>
+				</tr>
+			</table>
+			<input type="submit" value="Register Employee"/>
+		</form>
+	</div>
+	
+	<!-- Vehicle Registration Form -->
+	<div align="center" id="Vehicle">
+		<h1>Vehicle Registration Form</h1>
+		<form>
+			<table>
+				<tr>
+					<td>
+						<label>Vehicle Make (Company) :</label> 
+					</td>
+					<td>
+						<input type="text" placeholder="Enter vehicle company"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label>Vehicle Model :</label> 
+					</td>
+					<td>
+						<input type="text" placeholder="Enter vehicle model"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label>Vehicle Type :</label> 
+					</td>
+					<td>
+						<input type="text" placeholder="Vehicle type"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label>Vehicle Number :</label> 
+					</td>
+					<td>
+						<input type="text" placeholder="Vehicle number (eg-RJ16 9089)"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label>Employee Id :</label> 
+					</td>
+					<td>
+						<input type="text" placeholder="Enter employee id"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label>Identification :</label> 
+					</td>
+					<td>
+						<textarea rows="4" cols="20" placeholder="Color, mark,visible accessory etc."></textarea>
+					</td>
+				</tr>
+			</table>
+			<input type="submit" value="Register Vehicle"/>
+		</form>
+	</div>
+	
+	<div align="center" id="Feedback">
+		<h1>
+			Get In Touch
+		</h1>
+		
+		<form>
+			<table>
+				<tr>
+					<td>
+						<label>Name : <label>
+					</td>
+					<td>
+						<input type="text" placeholder="Enter your name"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label>Email Id : <label>
+					</td>
+					<td>
+						<input type="email" placeholder="Enter your email"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label>Subject : <label>
+					</td>
+					<td>
+						<input type="email"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label>Message : <label>
+					</td>
+					<td>
+						<textarea rows="5" cols="20"></textarea>
+					</td>
+				</tr>
+			</table>
+			<input type="submit" value="Send Feedback"/>
+		</form>
+	</div>
+	
+	<div id="Pricing">
+		<div align="center">
+			<h2>Cycle</h2>
+			<h3>
+				$100 <br>
+				/month
+			</h3>
+			<p>
+				$5 Daily <br>
+				$100 Monthly <br>
+				$500 Yearly
+			</p>
+			<button type="button" value="Purchase Cycle">
+				Purchase Now
+			</button>
+		</div>
+		
+		<div align="center">
+			<h2>Motor Cycle</h2>
+			<h3>
+				$200 <br>
+				/month
+			</h3>
+			<p>
+				$10 Daily <br>
+				$200 Monthly <br>
+				$1000 Yearly
+			</p>
+			<button type="button" value="Purchase Motor Cycle">
+				Purchase Now
+			</button>
+		</div>
+		
+		<div align="center">
+			<h2>Car</h2>
+			<h3>
+				$500 <br>
+				/month
+			</h3>
+			<p>
+				$20 Daily <br>
+				$500 Monthly <br>
+				$3500 Yearly
+			</p>
+			<button type="button" value="Purchase Car">
+				Purchase Now
+			</button>
+		</div>
+	</div>
+	
+	</body>
+
+</html>
