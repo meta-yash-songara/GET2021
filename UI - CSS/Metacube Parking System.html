@@ -1,0 +1,267 @@
+<html>
+
+	<head>
+		<title>Metacube Parking System</title>
+		<link rel="stylesheet" href="msp.css">
+		<script type="text/javascript">
+			function openEmpForm(){
+				var details = document.getElementById("employeeForm");
+				
+				if(details.style.display == "inline-block")
+					details.style.display = "none";
+				else
+				details.style.display = "inline-block";
+			}
+			function openVehicleForm(){
+				var details = document.getElementById("vehicleForm");
+				
+				if(details.style.display == "inline-block")
+					details.style.display = "none";
+				else
+				details.style.display = "inline-block";
+			}
+		</script>
+	</head>
+	
+	<!-- Load an icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--Google Font Link-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	
+	<body>
+	
+	<div id="header">
+		<div class="inlineDiv logo">
+			<img src="logo.svg" width="140px">
+			<label class="montFont" ><b>Parking System</b></label>
+		</div>
+		<div class="inlineDiv topNav">
+			<!-- Nav Bar -->
+			<nav id="navBar">
+				<a href="#formButtons"><i class="fa fa-user-plus" style="color: #4285F4;"></i> Add Employee</a> 
+				<a href="#formButtons"><i class="fa fa-car " style="color: #DB4437;"></i> Add Vehicle</a> 
+				<a href="#Feedback"><i class="fa fa-commenting" style="color: #F4B400;"></i> Feedback</a> 
+				<a href="#Pricing"><i class="fa fa-money" style="color: #0F9D58;"></i> Pricing</a>
+				
+			</nav>
+		</div>
+	</div>
+	
+	<!-- parking Image -->
+	<div align="center" id="parkingImage">
+		<img src="parking.jpg" width="100%"/>
+	</div>
+
+	<!--Registration Form Buttons-->
+	<div id="formButtons">
+		<!--Employee Form-->
+		<div id="#employee" class="inlineDiv montFont">
+
+			<div class="forms" onclick="openEmpForm()">
+				Employee Registration Form
+				<i class="fa fa-chevron-circle-down fa-lg" aria-hidden="true" style="padding-left: 16px;"></i>	
+			</div>
+
+			<div align="center" class="montFont form" id="employeeForm">
+				<form>
+					<table class="regTables">
+						<tr>
+							<td>
+								<input class="customTextInputStyle montFont" type="text" placeholder="Enter your name"/>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<label>
+									<input class="topMargin" type="radio" value="Male" name="gender"/> Male
+								</label>
+								<label>
+									<input class="topMargin" type="radio" value="Female" name="gender"/> Female
+								</label>
+								<label>
+									<input class="topMargin" type="radio" value="Other" name="gender"/> Other
+								</label>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<input class="customTextInputStyle montFont topMargin" type="email" placeholder="Enter your email">
+							</tr>
+						</tr>
+						
+						<tr>
+							<td>
+								<input class="customTextInputStyle montFont topMargin" type="password" placeholder="Enter your password">
+							</tr>
+						</tr>
+						
+						<tr>
+							<td>
+								<input class="customTextInputStyle montFont topMargin" type="password" placeholder="Re-Enter your password">
+							</tr>
+						</tr>
+						
+						<tr>
+							<td>
+								<input class="customTextInputStyle montFont topMargin" type="text" placeholder="Enter your phone number">
+							</tr>
+						</tr>
+					</table>
+					<input class="regButton montFont" type="submit" value="Register Employee"/>
+				</form>
+			</div>
+		</div>
+
+		<!--Vehicle Form-->
+		<div class="inlineDiv montFont" id="Vehicle">
+			<div class="forms" onclick="openVehicleForm()">
+				Vehicle Registration Form
+				<i class="fa fa-chevron-circle-down fa-lg" aria-hidden="true" style="padding-left: 16px;"></i>
+			</div>
+
+			<!-- Vehicle Registration Form -->
+			<div align="center" class="montFont form" id="vehicleForm">
+				<form>
+					<table>
+						<tr>
+							<td>
+								<input class="customTextInputStyle montFont topMargin" type="text" placeholder="Enter vehicle company"/>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<input class="customTextInputStyle montFont topMargin" type="text" placeholder="Enter vehicle model"/>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<input class="customTextInputStyle montFont topMargin" type="text" placeholder="Vehicle type"/>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<input class="customTextInputStyle montFont topMargin" type="text" placeholder="Vehicle number (eg-RJ16 9089)"/>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<input class="customTextInputStyle montFont topMargin" type="text" placeholder="Enter employee id"/>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<textarea class="customTextInputStyle montFont topMargin" rows="4" cols="20" placeholder="Color, mark,visible accessory etc."></textarea>
+							</td>
+						</tr>
+					</table>
+					<input class="regButton montFont"  type="submit" value="Register Vehicle"/>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="feebackForm" id="Feedback">
+		<div id="feedbackImageDiv" class="inlineDiv" style="flex: 2;" style="border: 2px solid red;">
+			<img src="feedback_illu.svg" width="100%">
+		</div>
+		<div class="inlineDiv" style="flex: 3;">
+			<!--Feedback Form-->
+			<div align="center" class="montFont">
+				<h1>
+					Get In Touch
+				</h1>
+				
+				<form>
+					<table class="regTables">
+						<tr>
+							<td>
+								<input class="customTextInputStyle montFont topMargin" type="text" placeholder="Enter your name"/>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<input class="customTextInputStyle montFont topMargin" type="email" placeholder="Enter your email"/>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<input class="customTextInputStyle montFont topMargin" type="text" placeholder="Subject"/>
+							</td>
+						</tr>
+						
+						<tr>
+							<td>
+								<textarea class="customTextInputStyle montFont topMargin" rows="5" cols="20" placeholder="Enter message here ..."></textarea>
+							</td>
+						</tr>
+					</table>
+					<input class="regButton montFont" type="submit" value="Send Feedback"/>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="Pricing" class="priceData montFont">
+		<div align="center" class="inlineDiv">
+			<h2>Cycle</h2>
+			<h3>
+				$100 <br>
+				/month
+			</h3>
+			<p>
+				$5 Daily <br>
+				$100 Monthly <br>
+				$500 Yearly
+			</p>
+			<button class="regButton montFont" type="button" value="Purchase Cycle">
+				Purchase Now
+			</button>
+		</div>
+		
+		<div align="center" class="inlineDiv priceDiv">
+			<h2>Motor Cycle</h2>
+			<h3>
+				$200 <br>
+				/month
+			</h3>
+			<p>
+				$10 Daily <br>
+				$200 Monthly <br>
+				$1000 Yearly
+			</p>
+			<button class="regButton montFont" type="button" value="Purchase Motor Cycle">
+				Purchase Now
+			</button>
+		</div>
+		
+		<div align="center" class="inlineDiv priceDiv">
+			<h2>Car</h2>
+			<h3>
+				$500 <br>
+				/month
+			</h3>
+			<p>
+				$20 Daily <br>
+				$500 Monthly <br>
+				$3500 Yearly
+			</p>
+			<button class="regButton montFont" type="button" value="Purchase Car">
+				Purchase Now
+			</button>
+		</div>
+	</div>
+	
+	</body>
+
+</html>
