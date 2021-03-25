@@ -1,0 +1,269 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+header img{
+    display: inline;
+}
+
+header nav{
+    display: inline;
+}
+
+header nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+header span button{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin: 0px;
+}
+
+#topDiv{
+    background-image: url("../images/homebg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    padding-top: 16px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 100px;
+}
+
+#homeText{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px;
+}
+
+#homeText section article{
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#homeText section span button{
+    margin-top: 60px;
+    padding-top: 16px;
+    padding-left: 32px;
+    padding-bottom: 16px;
+    padding-right: 32px;
+    color: white;
+    border: 0px;
+    margin-right: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+#btDownload{
+    background-color: chocolate;
+}
+
+#btFeatures{
+    background-color: royalblue;
+}
+
+#perfectFeatures section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 48px;
+}
+
+#perfectFeatures section section article{
+    display: inline-block;
+    text-align: left;
+}
+
+#perfectFeatures section section article h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-block-start: 0px;
+}
+
+#perfectFeatures section section i{
+    color: orangered;
+    margin-right: 16px;
+}
+
+#perfectFeatures  section section article h5{
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.centerAlign{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.sectionProperty{
+    text-align: center;
+    margin-top: 120px;
+}
+
+#screenshots section{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionProperty h1{
+    color: royalblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sectionProperty h5{
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+#screenshots section article{
+    text-align: left;
+}
+
+.padding-120px-tl{
+    padding-left: 120px;
+    padding-top: 120px;
+}
+
+.padding-120px-tr{
+    padding-right: 120px;
+    padding-top: 120px;
+}
+
+#screenshots section article h2,p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.flexContainer-sa{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.textAlign-left{
+    text-align: left;
+    margin-bottom: 88px;
+}
+
+.margin-right{
+    margin-right: 48px;
+}
+
+.reviewStyle h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.reviewStyle h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    margin-block-start: 0px;
+    margin-block-end: -8px;
+}
+
+.reviewStyle i{
+    color: royalblue;
+}
+
+.float-right{
+    float: right;
+}
+
+.footerTop{
+    background-color: royalblue;
+    padding-left: 120px;
+}
+
+.padding-60px{
+    padding: 60px;
+}
+
+#footerTop{
+    padding-top: 60px;
+    padding-left: 60px;
+    align-items: flex-end;
+    display: flex;
+}
+
+.downloadText h2{
+    color: white;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.downloadText p{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+#bottomNav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 24px;
+    background-color: rgb(35, 37, 63);
+}
+
+#bottomNav nav a{
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+    padding-left: 8px;
+    padding-right: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#bottomNav span button{
+    background-color: transparent;
+    color: rgb(124, 124, 124);
+    cursor: pointer;
+    border: none;
+    margin: 0px;
+}
+
+hr.solid {
+    border-top: 0.1px solid rgb(124, 124, 124);
+    border-bottom: 0px;
+    margin: 0px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+#bottom{
+    background-color: rgb(35, 37, 63);
+}
+
+#bottom p{
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 48px;
+    margin: 0px;
+    color: rgb(124, 124, 124);
+    font-size: 12px;
+}
