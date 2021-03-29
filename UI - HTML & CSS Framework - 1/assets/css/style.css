@@ -1,0 +1,39 @@
+.blog-logo{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+
+.blog-header{
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.rounded-corners{
+    border-radius: 32px;
+}
+
+.custom-font-500{
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.custom-font-600{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.custom-font-700{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.custom-font-800{
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+}
+
+.custom-font-900{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
