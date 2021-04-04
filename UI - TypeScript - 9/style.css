@@ -1,0 +1,121 @@
+body {
+  background-color: #f1f1f1;
+}
+
+div{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.heading {
+  font-size: 50px;
+  text-align: center;
+}
+
+.fields {
+  height: auto;
+  text-align: center;
+}
+
+.error-msg {
+  color: tomato;
+  font-weight: bold;
+  margin-top: 32px;
+}
+
+.input-box {
+  background-color: #f1f1f1;
+  border: 0px;
+  padding: 16px;
+  border-radius: 32px;
+  width: 300px;
+}
+
+.color-blue {
+  color: royalblue;
+}
+
+.bg-fields {
+  background-color: white;
+  border-radius: 32px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border: 1px solid #e0e0e0;
+}
+
+.bt-vehicle {
+  color: royalblue;
+  background-color: rgb(236, 240, 255);
+  border: 0px;
+  border-radius: 16px;
+  padding: 32px;
+  cursor: pointer;
+  outline: none;
+}
+
+.bt-vehicle:focus{
+    outline: none;
+    border-color: #9ecaed;
+    border: 1px solid rgb(201, 214, 255);
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.bt-vehicle:hover{
+    outline: none;
+    border-color: #9ecaed;
+    border: 1px solid rgb(201, 214, 255);
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.margin-x-2 {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.bt-get-pass{
+    background-color: royalblue;
+    color: white;
+    border-radius: 32px;
+    border: 0px;
+    padding: 12px;
+    cursor: pointer;
+    outline: none;
+}
+
+.bt-field{
+    background-color: #f1f1f1;
+    color: royalblue;
+    border-radius: 32px;
+    border: 0px;
+    padding: 12px;
+    cursor: pointer;
+    outline: none;
+}
+
+.bt-get-pass:hover{
+    outline: none;
+    border-color: #9ecaed;
+    border: 1px solid rgb(201, 214, 255);
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none; /* chrome and safari */
+  -moz-appearance: none; /* Mozilla */
+  -ms-appearance: none;
+  background: url("/assets/icon/drop_down.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: right;
+  margin-right: 32px;
+}
+
+input:focus{
+    outline: none;
+    border-color: #9ecaed;
+    border: 1px solid rgb(201, 214, 255);
+    box-shadow: 0 0 10px #9ecaed;
+}

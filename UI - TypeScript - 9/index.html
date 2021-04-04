@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>MPS</title>
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!--script file-->
+    <script src='main.js'></script>
+
+    <!--CSS style sheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Integrated fonr awesome v4.7.0-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <h1 class="heading">
+        Meta<span class="color-blue">cube</span> Parking System
+    </h1>
+
+    <div class="fields bg-fields" id="fields">
+        <div class="fields">
+            <h1 id="message">Let's start</h1>
+            <input id="input-field" class="input-box" name="input_field" type="text" 
+            placeholder="Enter you full name" onkeyup="validateField()" onblur="changeInputField()"/>
+            <p id="error-msg" class="error-msg"></p>
+        </div>
+    </div>
+
+    <div class="fields bg-fields" id="vehicle-types" hidden>
+        <h1 id="message-vehical-form"></h1>
+        <button id="cycle" type="button" class="bt-vehicle margin-x-2" value="cycle" onclick="getPrices(this.id)">
+            <i class="fa fa-bicycle fa-4x icons"></i>
+        </button>
+        <button id="bike" type="button" class="bt-vehicle margin-x-2" value="bike" onclick="getPrices(this.id)">
+            <i class="fa fa-motorcycle fa-4x icons" aria-hidden="true"></i>
+        </button>
+        <button id="car" type="button" class="bt-vehicle margin-x-2" value="car" onclick="getPrices(this.id)">
+            <i class="fa fa-car fa-4x icons" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <div id="pricing" class="bg-fields" align="center" hidden>
+        <h2 class="vehicle-type"></h2>
+        <div class="price-container">
+            <h2>Daily</h2>
+
+            <button id="daily" type="button" class="bt-field" onclick="getPass(this.id)">
+            </button>
+        </div>
+
+        <div class="price-container">
+            <h2>Month</h2>
+
+            <button id="monthly" type="button" class="bt-field" onclick="getPass(this.id)">
+            </button>
+        </div>
+
+        <div class="price-container">
+            <h2>Year</h2>
+
+            <button id="yearly" type="button" class="bt-field" onclick="getPass(this.id)">
+            </button>
+        </div>
+    </div>
+
+    <div id="currency-types" class="bg-fields" align="center" hidden>
+        <h2>Choose currency : </h2>
+        <select id="currency" class="input-box" style="width: 100px;">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            <option value="YEN">YEN</option>
+        </select>
+        <button id="bt-currency-type" class="bt-get-pass" onclick="getCurrency()">
+            Purchase Pass
+        </button>
+    </div>
+
+    <div id="final-pass" class="fields">
+        <h2 id="pass"></h2>
+    </div>
+
+</body>
+</html>
